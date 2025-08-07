@@ -2,7 +2,7 @@
 
 
 if ($_SERVER["REQUEST_METHOD"] !== "POST") {
-    header("Location: ../login.php");
+    header("Location: ../index.php");
     exit;
 }
 require_once 'config_session.inc.php';
@@ -24,7 +24,7 @@ $redirectMap = [
 ];
 
 $dashboardMap = [
-    'student' => '../student/index.php',
+    'student' => '../student/student_dashboard.php',
     'faculty' => '../faculty/faculty_dashboard.php',
     'admin' => '../admin/admin_dashboard.php'
 ];

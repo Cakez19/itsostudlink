@@ -4,7 +4,7 @@ require_once '../includes/db.php';
 require_once '../includes/school_year.inc.php';
 
 if (!isset($_SESSION['user_id'])) {
-    header("Location: ../login.php");
+    header("Location: ../index.php");
     die();
 }
 $username = $_SESSION['user_username'];

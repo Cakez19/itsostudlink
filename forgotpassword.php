@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <input type="text" name="contact" id="contact" placeholder="Contact Number" required>
             <button type="submit">Send code</button>
         </form>
-        <a href="login.php">Back to Login</a>
+        <a href="index.php">Back to Login</a>
     </div>
 </body>
 </html>
