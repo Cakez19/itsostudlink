@@ -1,0 +1,22 @@
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 1 month"
+
+  <FilesMatch "\.(css|js)$">
+    ExpiresDefault "access plus 1 year"
+  </FilesMatch>
+
+  <FilesMatch "\.(jpg|jpeg|png|gif|webp|svg|ico)$">
+    ExpiresDefault "access plus 1 year"
+  </FilesMatch>
+
+  <FilesMatch "\.(pdf|doc|docx|xls|xlsx|ppt|pptx)$">
+    ExpiresDefault "access plus 1 month"
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(css|js|jpg|jpeg|png|gif|webp|svg|ico|pdf|doc|docx|xls|xlsx|ppt|pptx)$">
+    Header set Cache-Control "public"
+  </FilesMatch>
+</IfModule>

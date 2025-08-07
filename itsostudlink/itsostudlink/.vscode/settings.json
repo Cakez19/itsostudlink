@@ -1,0 +1,23 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "sql12.freesqldatabase.com",
+            "port": 3306,
+            "driver": "MySQL",
+            "database": "sql12790165",
+            "username": "sql12790165",
+            "password": "biNzzLTkeg",
+            "name": "ITSO"
+        }
+    ],
+    "php-intellisense.trace.server": "verbose",
+    "sonarlint.connectedMode.project": {
+        "connectionId": "twilio",
+        "projectKey": "twilio_twilio-php"
+    }
+}

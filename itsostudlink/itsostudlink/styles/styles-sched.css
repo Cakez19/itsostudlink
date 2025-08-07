@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .container {
+    display: flex;
+    min-height: 100vh;
+  }
+  .logo{
+  display: flex;
+  place-items: center;
+  justify-content: center;
+}
+  .sidebar {
+    width: 220px;
+    background-color: #6c0fd6;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .sidebar h1 {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+  }
+  
+  .sidebar li {
+    padding: 10px 0;
+    cursor: pointer;
+  }
+  li a{
+    padding: 10px;
+  }
+  
+  .sidebar li:hover {
+    background-color: #5408aa;
+    border-radius: 4px;
+    padding-left: 10px;
+  }
+  
+  .main {
+    flex: 1;
+    padding: 20px 40px;
+  }
+  
+  .topbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .topbar span {
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  .topbar img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+  }
+  
+  h2 {
+    margin-top: 20px;
+    font-size: 1.8rem;
+  }
+  
+  .schedule {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .schedule table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .schedule th,
+  .schedule td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .schedule th {
+    background-color: #f2f2f2;
+  }
+  
+  .announcement {
+    margin-top: 30px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+  }
+  
+  .announcement-icon {
+    font-size: 30px;
+    color: #d10000;
+    margin-right: 20px;
+  }
+  
+  .announcement-text strong {
+    font-size: 1.2rem;
+    display: block;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #888;
+    position: relative;
+    
+  }
+  
+  .back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #6c0fd6;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .back-to-top:hover {
+    background-color: #5408aa;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  
+    .main {
+      padding: 20px;
+    }
+  }
+  
