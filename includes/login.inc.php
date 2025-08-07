@@ -24,7 +24,7 @@ $redirectMap = [
 ];
 
 $dashboardMap = [
-    'student' => '../student/index.php',
+    'student' => '../student/student_dashboard.php',
     'faculty' => '../faculty/faculty_dashboard.php',
     'admin' => '../admin/admin_dashboard.php'
 ];
@@ -63,5 +63,5 @@ if ($usertype === 'faculty') {
     $_SESSION['username'] = $user['username'];
 }
 
-header("Location: " . ($dashboardMap[$usertype] ?? '../login.php'));
+header("Location: " . ($dashboardMap[$usertype] ?? '../index.php'));
 exit;
